@@ -1,0 +1,8 @@
+parameters:
+    level: max
+    paths:
+        - src
+	
+    ignoreErrors:
+        - '#isValid\(\) has parameter \$context with no type specified#'
+        - '#Property Fet\\LaminasCloudflareTurnstile\\TurnstileCaptcha::\$options#'

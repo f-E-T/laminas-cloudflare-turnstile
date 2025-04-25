@@ -1,0 +1,50 @@
+{
+    "name": "fet/laminas-cloudflare-turnstile",
+    "description": "An implementation of cloudflare turnstile for Laminas applications.",
+    "keywords": ["laminas", "captcha", "cloudflare", "turnstile", "cloudflare turnstile"],
+    "license": "MIT",
+    "homepage": "https://github.com/f-e-t/laminas-cloudflare-turnstile",
+    "support": {
+        "issues": "https://github.com/f-e-t/laminas-cloudflare-turnstile/issues",
+        "source": "https://github.com/f-e-t/laminas-cloudflare-turnstile"
+    },
+    "authors": [
+        {
+            "name": "Marc Schulthess",
+            "email": "fet.ca26f02b@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laminas/laminas-servicemanager": "^3.4",
+        "laminas/laminas-view": "^2.36",
+        "laminas/laminas-mvc": "^3.8",
+        "guzzlehttp/guzzle": "^7.9",
+        "laminas/laminas-captcha": "^2.18",
+        "laminas/laminas-form": "^3.21",
+        "laminas/laminas-i18n": "^2.30"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/phpinsights": "^2.11",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fet\\LaminasCloudflareTurnstile\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests/ --testdox --color",
+        "analyse": "vendor/bin/phpstan analyse -c phpstan.neon",
+        "quality": "vendor/bin/phpinsights"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
